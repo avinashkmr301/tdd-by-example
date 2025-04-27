@@ -1,8 +1,7 @@
 package guru.springframework;
 
-public class Doller {
+public class Doller extends Money{
 
-   private int amount;
 
     Doller(int amount){
         this.amount=amount;
@@ -10,11 +9,6 @@ public class Doller {
 
     Doller times(int multiplier){
         return new Doller(amount*multiplier);
-
     }
 
-    public boolean equals(Object object){
-        Doller doller = (Doller) object;
-        return amount == doller.amount;
-    }
 }
